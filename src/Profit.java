@@ -9,7 +9,7 @@ public class Profit {
                 small = arr[i];
             }
         }
-        return (small > 0)? minIndex : 0;
+        return (small > 0)? minIndex : -1;
     }
 
     public int maximum(int[] arr, int start){

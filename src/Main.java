@@ -12,11 +12,11 @@ public class Main {
         Profit profit = new Profit();
         int small = profit.minimum(arr, 0); // Index of smallest number
         int max = profit.maximum(arr, small);    // Largest number
-        if(small == 0)
-            System.out.println(0);
-        else if(small > 0)
+        System.out.println(small);
+        if(small == -1)
+            System.out.println("you cannot enter negative numbers");
+        else
             System.out.println(profit.profit(arr[small], max)); // if profit == 0, then there is no profit
-        else System.out.println("you cannot enter negative numbers");
     }
 
 }
