@@ -12,7 +12,7 @@ public class Main {
         Profit profit = new Profit();
         int small = profit.minimum(arr, 0); // Index of smallest number
         int max = profit.maximum(arr, small);    // Largest number
-        System.out.println(small);
+    
         if(small == -1)
             System.out.println("you cannot enter negative numbers");
         else
